@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index2.css">
+    <title>Document</title>
+</head>
+<body>
+
+   
+
+
+
+
+
+    <div class="container-fluid">
+
+        
+
+        <div class="container container-active" >
+             <!-- progress bar -->
+
+             <div class="progressbar">
+                 <div class="progress" id="progress">
+
+                 </div>
+                 
+                <div class="progress-step progress-step-active" data-title="Intro" id="step1"></div>
+
+                <div class="progress-step" data-title="Choose business" id="step2"></div>
+                <div class="progress-step" data-title="health insurance" id="step3"></div>
+                <div class="progress-step" data-title="password" id="step4"></div>
+                <div class="progress-step" data-title="NSIFT" id="step5"></div>
+                <div class="progress-step" data-title="NSIFT-code" id="step6"></div>
+                <div class="progress-step" data-title="Finish" id="step7"></div>
+            </div>
+            
+            <!--  -->
+
+            <!-- first page -->
+
+            <div class="row" id="main" >
+                
+                <div class="col-md-12 py-5" >
+
+
+                    <div class="first" id="first">
+                    
+                    <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                        <img src="images/icon.png" alt="icon">
+                        <strong>Orio</strong>
+                    </h2>
+                    <h1 style="text-align: center;" class="text-black">
+                        <strong>Pension</strong>
+                    </h1>
+                    <h4 style="text-align: center; color:gray;">Choose the business you want to transact now.</h4>
+
+
+                    <div class="container container-act" >
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 my-5">
+                                <h3 class="mt-5" style="text-align: center;">
+                                    Is your business Pension compliant?
+                                </h3>
+
+                                <div class="d-flex mt-5" style="justify-content: space-evenly;">
+                                    
+                                    <button id="btnYes" class="btn text-white" style="background-color: #6246D5;" onclick="next('first')">
+                                        Yes
+                                    </button>
+                                    
+                                    
+                                    
+                                    <button class="btn" style="border: 1px solid #6246D5;">
+                                        No
+                                    </button>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+<!-- second page -->
+
+
+                    <div class="container" id="second"> 
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                                    <img src="images/icon.png" alt="icon">
+                                    <strong>Orio</strong>
+                                </h2>
+                                <h1 style="text-align: center;" class="text-black">
+                                    <strong>Pension</strong>
+                                </h1>
+                                <h4 style="text-align: center; color:gray;">Choose the business you want to transact now.</h4>
+            
+            
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-5">
+            
+                                            <div class="mt-5">
+                                                <!-- <form method="post" class="form" id="Pension2" > -->
+                                                    <div class="form-group mb-5">
+                                                        <label for="company">
+                                                            <strong>
+                                                                Company Pension
+                                                            </strong>
+                                                        </label>
+                                                        <input type="text" class="form-control" name="company">
+                                                    </div>
+                                                    <div class="form-group" style="text-align: center;" >
+
+                                                        <button class="btn text-white"  style="background-color: #6246D5; padding: 11px 20px; min-width: 200px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;" onclick="next('second')" >
+                                                            Continue
+                                                        </button>
+
+
+                                                    </div>
+                                                <!-- </form> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+                    <!-- third page -->
+
+                    <div class="container" id="third">
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                                    <img src="images/icon.png" alt="icon">
+                                    <strong>Orio</strong>
+                                </h2>
+                                <h1 style="text-align: center;" class="text-black">
+                                    <strong>Health Insurance</strong>
+                                </h1>
+                                <h4 style="text-align: center; color:gray;">Is your business Health insurance compliant?.</h4>
+            
+            
+                                <div class="container container-act">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-5">
+                                            <h3 class="mt-5" style="text-align: center; font-size: 25px;">
+                                                Is your business Health insurance compliant?
+                                            </h3>
+            
+                                            <div class="d-flex mt-5" style="justify-content: space-evenly;">
+                                                <button id="HbtnYes" class="btn text-white" style="background-color: #6246D5;" onclick="next('third')">
+                                                    Yes
+                                                </button>
+                                                
+                                                <button class="btn" style="border: 1px solid #6246D5;">
+                                                    No
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+
+
+
+<!-- fourth page -->
+
+
+                    <div class="container" id="fourth">
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                                    <img src="images/icon.png" alt="icon">
+                                    <strong>Orio</strong>
+                                </h2>
+                                <h1 style="text-align: center;" class="text-black">
+                                    <strong>Health Insurance</strong>
+                                </h1>
+                                <h4 class="text-black" style="text-align: center; color:gray;">Choose the business you want to transact now.</h4>
+            
+            
+                                <div class="container container-act">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-5">
+            
+                                            <div class="mt-5">
+                                                <!-- <form method="post" class="form" id="healthInsurance2"> -->
+                                                    <div class="form-group mb-5">
+                                                        <label for="company">
+                                                            <strong>
+                                                                Company Pension
+                                                            </strong>
+                                                        </label>
+                                                        <input type="text" class="form-control" name="company">
+                                                    </div>
+                                                    <div class="form-group" style="text-align: center;">
+                                                        <button class="btn text-white" style="background-color: #6246D5; padding: 11px 20px; min-width: 200px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;" onclick="next('fourth')">
+                                                            Continue
+                                                        </button>
+                                                    </div>
+                                                <!-- </form> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+
+
+
+<!-- fifth page -->
+
+                    <div class="container" id="fifth">
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                                    <img src="images/icon.png" alt="icon">
+                                    <strong>Orio</strong>
+                                </h2>
+                                <h1 style="text-align: center;" class="text-black">
+                                    <strong>NSITF</strong>
+                                </h1>
+                                <h4 style="text-align: center; color:gray;">Choose the business you want to transact now..</h4>
+            
+            
+                                <div class="container container-act">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-5">
+                                            <h3 class="mt-5" style="text-align: center; font-size: 25px;">
+                                                Is your business NSITF compliant?
+                                            </h3>
+            
+                                            <div class="d-flex mt-5" style="justify-content: space-evenly;">
+                                                <button id="Ns2btnYes" class="btn text-white" style="background-color: #6246D5;" onclick="next('fifth')">
+                                                    Yes
+                                                </button>
+                                                
+                                                <button class="btn" style="border: 1px solid #6246D5;">
+                                                    No
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+<!-- sixth page -->
+
+
+                    <div class="container" id="sixth">
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                                    <img src="images/icon.png" alt="icon">
+                                    <strong>Orio</strong>
+                                </h2>
+                                <h1 style="text-align: center;" class="text-black">
+                                    <strong>NSITF</strong>
+                                </h1>
+                                <h4 class="text-black" style="text-align: center; color:gray;">Choose the business you want to transact now.</h4>
+            
+            
+                                <div class="container container-act">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-5">
+            
+                                            <div class="mt-5">
+                                                <!-- <form method="post" class="form" id="healthInsurance2"> -->
+                                                    <div class="form-group mb-5">
+                                                        <label for="company">
+                                                            <strong>
+                                                                NSITF company code
+                                                            </strong>
+                                                        </label>
+                                                        <input type="text" class="form-control" name="company">
+                                                    </div>
+                                                    <div class="form-group" style="text-align: center;">
+                                                        <button class="btn text-white" style="background-color: #6246D5; padding: 11px 20px; min-width: 200px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;" onclick="next('sixth')">
+                                                            Continue
+                                                        </button>
+                                                    </div>
+                                                <!-- </form> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+
+
+<!-- seventh page -->
+
+                    <div class="container" id="seventh">
+                        <div class="row">
+                            <div class="col-md-12 py-5">
+                                <h2 class="d-flex" style="justify-content: center; align-items: center; gap: 5px;" >
+                                    <img src="images/icon.png" alt="icon">
+                                    <strong>Orio</strong>
+                                </h2>
+                                <h1 style="text-align: center;" class="text-black">
+                                    <strong>Business Bank Account</strong>
+                                </h1>
+                                <h4 class="text-black" style="text-align: center; color:gray;">We will create a bank account for your business to make salary payment transactions..</h4>
+                                <h4 class="text-black mt-5" style="text-align: center; width: 80%; margin: auto; ">We will only accept bank transfers from this bank account to the wallet account we will create for your business..</h4>
+            
+            
+                                <div class="container container-act">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 my-5">
+            
+                                            <div class="mt-5">
+                                                <form method="post" class="form" id="businessaccpage">
+                                                    <div class="form-group mb-5">
+                                                        <label for="company">
+                                                            <strong>
+                                                                Business/ Owner’s account number
+                                                            </strong>
+                                                        </label>
+                                                        <input type="text" class="form-control" name="company" placeholder="Input your NSIFT company code">
+                                                    </div>
+                                                    
+                                                        
+                                                        <div class="input_wrap mb-5">
+                                                            <label for="company">
+                                                                <strong>
+                                                                    Business/ Owner’s bank account
+                                                                </strong>
+                                                            </label>
+                                                            <select id="lists" class="input-group">
+                                                                <option value="1" selected>Zenit Bank</option>
+                                                                <option value="2" >UBA Bank</option>
+                                                                <option value="3">ECO Bank</option>
+                                                            </select>
+                                                            
+                                                            <small></small>
+                                                        </div>
+                                                    
+                                                    <div class="form-group" style="text-align: center;">
+                                                        <button class="btn text-white" style="background-color: #6246D5; padding: 11px 20px; min-width: 200px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;">
+                                                            Finish
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            <!-- end -->
+            
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+
+  
+</body>
+</html>
